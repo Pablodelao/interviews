@@ -1,0 +1,32 @@
+.lw { font-size: 60px; }
+
+#fun {
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+}
+.square{
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+}
+
+.row {
+  display: flex;
+   justify-content: center;
+}
+
+/* .square:nth-child(-n+3) {
+  cursor: pointer;
+} */
+
+.row:first-of-type .square,
+.row:nth-of-type(-n+4) .square {
+  cursor: pointer;
+}
+
+.row:nth-last-child(-n+3) .square {
+  cursor: help;
+}
+
+.row:nth-of-type(4) {
+  visibility: hidden;
+}
